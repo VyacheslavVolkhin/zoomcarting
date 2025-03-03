@@ -39,7 +39,7 @@
                     </a>
                 </div>
                 <div class="action-inner-wrap">
-                    <a href="" class="btn">
+                    <a href="" class="btn js-popup-open" data-popup="popup-callback">
                         <div class="button-title">Связаться</div>
                     </a>
                 </div>
@@ -100,7 +100,10 @@
             <br><br><br><br><br>
             <ul style="color: var(--clr-att);font-size: 2em;">
                 <li><a href="main.html">Main</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="card.html">Card</a></li>
                 <li>--------</li>
+                <li><a href="" class="js-popup-open" data-popup="popup-callback">Popup</a></li>
             </ul>
             <br><br><br><br><br>
         </div>
@@ -178,7 +181,7 @@
                             </a>
                         </div>
                         <div class="action-wrap">
-                            <a href="" class="btn button-small button-text-lower">
+                            <a href="" class="btn button-small button-text-lower js-popup-open" data-popup="popup-callback">
                                 <div class="button-title">Связаться</div>
                             </a>
                         </div>
@@ -187,6 +190,44 @@
             </div>
         </footer>
         <!-- /footer -->
+
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-callback">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title h1-title">форма <span class="title-att">связи</span></div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" class="form-input" placeholder="имя">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="tel" class="form-input" placeholder="телефон">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input" placeholder="e-mail">
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">
+                                    <div class="button-title">отправить</div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
 
     </div>
     <!-- /wrap -->

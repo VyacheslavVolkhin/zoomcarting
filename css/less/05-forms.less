@@ -1,6 +1,19 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+.frm-popup {
+	.frm-field {
+		margin-bottom: 3rem;
+	}
+	.frm-row-submit {
+		.frm-field {
+			margin: 0;
+		}
+		.btn {
+			width: 100%;
+		}
+	}
+}
 .frm-row,
 .frm-field,
 .frm-row-submit {
@@ -51,9 +64,16 @@
 
 
 .frm-select {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
 	input {
 		&:checked {
 			&~label {
+				&:before {
+					background-color: var(--clr-att);
+					border-color: var(--clr-att);
+				}
 				&:after {
 					opacity: 1;
 				}
@@ -61,14 +81,20 @@
 		}
 	}
 	label {
+		min-height: 24px;
+		padding-left: 37px;
 		&:before, &:after {
-			
+			width: 22px;height: 22px;
+			border-radius: 6px;
+			border: 1px solid #878787;
+			top: 12px;left: 11px;
+			margin: -11px 0 0 -11px;
+			transition: all ease 0.2s;
 		}
 		&:after {
-			border-radius: 0;
-			border: none;
-			background: url(../img/icons/chk.svg) center / 24px auto no-repeat;
-			opacity: 0;
+			width: 10px;height: 10px;
+			background: #fff;
+			margin: -5px 0 0 -5px;
 		}
 	}
 	a {

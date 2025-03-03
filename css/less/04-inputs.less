@@ -1,11 +1,30 @@
 /* ----------------------------------- *\
 			inputs elements styles
 \* ----------------------------------- */
+[placeholder]::-webkit-input-placeholder {color: var(--clr-base);}
+[placeholder]:-moz-placeholder {color: var(--clr-base);}
+[placeholder]::-moz-placeholder {color: var(--clr-base);}
+[placeholder]:-ms-input-placeholder {color: var(--clr-base);}
 .form-input[placeholder] {
     text-overflow: ellipsis;
 }
 .form-input {
     text-overflow: ellipsis;
+	height: 11.4rem;
+	border: 1px solid #ffffff50;
+	padding: 0 15px 0 3rem;
+	font-size: 2.9rem;
+	letter-spacing: 0.5px;
+	line-height: (32/29);
+	text-transform: uppercase;
+	color: var(--clr-base);
+	background: transparent;
+	.fh;
+	&:focus {
+		border-width: 2px;
+		border-color: #fff;
+		padding-left: var(3rem - 1);
+	}
 }
 textarea.form-input {
 
@@ -351,22 +370,17 @@ select.form-input:required:invalid {
         }
     }
     &.ico-close {
-        &:after, &:before {
-            width: 20px;
-            height: 2px;
-            top: 50%;
-            left: 50%;
-            bottom: auto;
-            right: auto;
-            margin: -1px 0 0 -10px;
-            background: var(--clr-base);
-        }
-        &:before {
-            .t-rotate(45deg);
-        }
-        &:after {
-            .t-rotate(-45deg);
-        }
+		width: 7rem;height: 7rem;
+		border: 2px solid var(--clr-base);
+		border-radius: 50%;
+		&:before {
+			background-image: url(../img/icons/close.svg);
+			background-size: 7rem auto;
+		}
+		&:hover {
+			background-color: var(--clr-att);
+			border-color: var(--clr-att);
+		}
     }
 	&.ico-point {
 		width: 5.6rem;
